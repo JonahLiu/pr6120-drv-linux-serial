@@ -31,8 +31,7 @@
 #
 ifneq ($(KERNELRELEASE),)
 
-obj-m += MultPcom.o
-MultPcom-objs := MultPcom.o
+obj-m += multpcom.o
 
 else
 
