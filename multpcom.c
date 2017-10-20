@@ -1115,6 +1115,11 @@ static SIMPLE_DEV_PM_OPS(pciserial_pm_ops, pciserial_suspend_one,
 
 static struct pci_device_id serial_pci_tbl[] = {
 	{	PCI_VENDOR_ID_CASC706, PCI_DEVICE_ID_MULTPCOM,
+		PCI_ANY_ID,
+		PCI_ANY_ID, 0, 0,
+		pbn_b2_4_460800 },
+/*
+	{	PCI_VENDOR_ID_CASC706, PCI_DEVICE_ID_MULTPCOM,
 		PCI_SUBVENDOR_ID_MULTPCOM,
 		PCI_SUBDEVICE_ID_MULTPCOM4, 0, 0,
 		pbn_b2_4_460800 },
@@ -1126,6 +1131,7 @@ static struct pci_device_id serial_pci_tbl[] = {
 		PCI_SUBVENDOR_ID_MULTPCOM,
 		PCI_SUBDEVICE_ID_MULTPCOM16, 0, 0,
 		pbn_b2_16_460800 },
+*/
 	{ 0, }
 };
 
